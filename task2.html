@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Parallax Universe — Deep Space</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gruppo&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="task2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <h1 class="title">Another Universe</h1>
+
+        <!-- Parallax layers (far -> near). Each has data-speed for JS control -->
+        <div class="layer layer-stars" data-speed="0.05"></div>
+        <div class="layer layer-distant-nebula" data-speed="0.12"></div>
+        <div class="layer layer-planets" data-speed="0.22"></div>
+        <div class="layer layer-midclouds" data-speed="0.36"></div>
+        <div class="layer layer-foreground" data-speed="0.6"></div>
+        <div class="layer layer-fog" data-speed="0.8"></div>
+
+        <!-- Stars particle canvas (CSS-made) -->
+        <div class="stars"></div>
+
+        <!-- Floating objects -->
+        <img
+          class="obj planet planet-1"
+          src="https://i.imgur.com/1ZQZ1Z2.png"
+          alt="planet"
+          data-speed="0.18"
+        />
+        <img
+          class="obj planet planet-2"
+          src="https://i.imgur.com/3f1vXc7.png"
+          alt="planet"
+          data-speed="0.28"
+        />
+        <img
+          class="obj comet"
+          src="https://i.imgur.com/7y2b7pA.png"
+          alt="comet"
+          data-speed="0.9"
+        />
+        <img
+          class="obj asteroid a1"
+          src="https://i.imgur.com/AZumOFI.png"
+          alt="asteroid"
+          data-speed="0.55"
+        />
+        <img
+          class="obj asteroid a2"
+          src="https://i.imgur.com/yIbmDYw.png"
+          alt="asteroid"
+          data-speed="0.65"
+        />
+      </div>
+
+      <div class="content">
+        <div class="text">
+          <p>
+            Welcome to the Parallax Universe — a layered deep space experience.
+            Scroll to travel from distant stars to close-up asteroids and
+            glowing nebulae.
+          </p>
+          <p>
+            In this demo we've added multiple depth layers, cursor-based
+            parallax and animated objects (comet, planets, asteroids) to create
+            a stronger sense of depth.
+          </p>
+          <p>
+            Use this as the base: change images, speeds, and add more objects
+            for richer scenes. When you're ready, push the folder to a GitHub
+            repo and enable GitHub Pages to submit the live link.
+          </p>
+          <p>
+            Enjoy exploring — and tweak the speeds in <code>task2.js</code> if
+            you'd like different depth behaviour.
+          </p>
+        </div>
+
+        <!-- many floating asteroids like your rocks but now as asteroids -->
+        <img
+          class="rock rock-1"
+          src="https://i.imgur.com/yIbmDYw.png"
+          alt="asteroid"
+          data-speed="0.8"
+        />
+        <img
+          class="rock rock-2"
+          src="https://i.imgur.com/MZutMpv.png"
+          alt="asteroid"
+          data-speed="0.6"
+        />
+        <img
+          class="rock rock-3"
+          src="https://i.imgur.com/AZumOFI.png"
+          alt="asteroid"
+          data-speed="0.4"
+        />
+        <img
+          class="rock rock-4"
+          src="https://i.imgur.com/1ZQZ1Z2.png"
+          alt="asteroid"
+          data-speed="0.7"
+        />
+
+        <div class="rock huge-rock"></div>
+      </div>
+    </div>
+
+    <script src="task2.js"></script>
+  </body>
+</html>
